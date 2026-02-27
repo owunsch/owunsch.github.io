@@ -31,7 +31,6 @@ reviews:
     publication: "Journal for Eighteenth-Century Studies"
     url: "https://doi.org/10.1111/1754-0208.12978"
 ---
-# Book
 
 <section class="book-hero">
   <figure class="book-hero-cover">
