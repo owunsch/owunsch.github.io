@@ -88,6 +88,19 @@ h1 {
   margin: 1.5rem 0 0;
 }
 
+.home-headshot {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.home-headshot img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 4px;
+  display: inline-block;
+}
+
 .article-item {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -195,5 +208,9 @@ h1 {
 
   body {
     font-size: 0.98rem;
+  }
+
+  .home-headshot {
+    margin-bottom: 1.25rem;
   }
 }
