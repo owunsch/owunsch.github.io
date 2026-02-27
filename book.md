@@ -32,13 +32,13 @@ reviews:
     url: "https://doi.org/10.1111/1754-0208.12978"
 ---
 
-<section class="book-intro">
-  <figure class="book-cover">
+<div class="book-intro">
+  <div class="book-cover">
     <img
       src="{{ '/assets/img/a-delicate-matter-cover.jpg' | relative_url }}"
       alt="A Delicate Matter book cover"
       loading="lazy">
-  </figure>
+  </div>
 
   <div class="book-meta">
     <h2>{{ site.book.title }}</h2>
@@ -58,7 +58,7 @@ reviews:
       <li>WorldCat: {% if site.book.links.worldcat != "" %}<a href="{{ site.book.links.worldcat }}">Link</a>{% else %}TBD{% endif %}</li>
     </ul>
   </div>
-</section>
+</div>
 
 {% if page.reviews and page.reviews.size > 0 %}
 <section class="book-reviews" aria-label="Selected reviews">
