@@ -148,6 +148,25 @@ h1 {
   background: var(--surface);
 }
 
+.reviews-list {
+  margin-top: 1.25rem;
+}
+
+.review-item {
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.review-item blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.review-attribution {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
 .footer-wrap {
   display: flex;
   flex-wrap: wrap;
