@@ -5,7 +5,7 @@ layout: default
   <header class="article-header">
     <h1>{{ page.title }}</h1>
     {% if page.citation_display and page.citation_display != "" %}
-      <p class="citation-line">{{ page.citation_display }}</p>
+      <div class="citation-line">{{ page.citation_display | markdownify }}</div>
     {% endif %}
 
     <div class="article-actions">
