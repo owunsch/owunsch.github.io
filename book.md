@@ -8,10 +8,6 @@ permalink: /book/
 
 <p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }} ({{ site.book.status }})</p>
 
-{% if site.book.citation_display %}
-<p class="citation-line">{{ site.book.citation_display }}</p>
-{% endif %}
-
 {% if site.book.description and site.book.description != "" %}
 {{ site.book.description }}
 {% else %}
