@@ -10,22 +10,11 @@ permalink: /articles/
 {% for article in sorted_articles %}
   <li class="article-item">
     <h2><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
-    <p class="article-meta">
-      {{ article.year }}
-      {% if article.venue and article.venue != "" %} · {{ article.venue }}{% endif %}
-      {% if article.book_title and article.book_title != "" %} · {{ article.book_title }}{% endif %}
-    </p>
-    {% if article.abstract and article.abstract != "" %}
-      <p>{{ article.abstract | strip_html }}</p>
-    {% else %}
-      <p class="article-meta">Abstract forthcoming.</p>
+    {% if article.citation_display and article.citation_display != "" %}
+      <p class="citation-line">{{ article.citation_display }}</p>
     {% endif %}
-    {% if article.tags and article.tags.size > 0 %}
-      <ul class="tag-list">
-        {% for tag in article.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
+    {% if article.abstract and article.abstract != "" %}
+      <p>{{ article.abstract | strip_html | truncate: 220 }}</p>
     {% endif %}
   </li>
 {% endfor %}
