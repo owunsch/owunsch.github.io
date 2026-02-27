@@ -1,0 +1,45 @@
+title: "Oliver Wunsch"
+description: "Academic website for Oliver Wunsch"
+url: "https://owunsch.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+
+site_owner:
+  name: "Oliver Wunsch"
+  affiliation: "Boston College"
+  email: "wunscho@bc.edu"
+
+home_intro:
+  short_blurb: >
+    Art historian specializing in eighteenth-century French art and visual culture,
+    with interests in materiality, color, race, and aesthetic judgment.
+
+book:
+  title: "A Delicate Matter: Art, Fragility, and Consumption in Eighteenth-Century France"
+  year: 2024
+  publisher: "Pennsylvania State University Press"
+  status: "published"
+  citation_display: "Oliver Wunsch, *A Delicate Matter: Art, Fragility, and Consumption in Eighteenth-Century France* (Pennsylvania State University Press, 2024)."
+  description: ""
+  links:
+    publisher: ""
+    amazon: ""
+    worldcat: ""
+    other: []

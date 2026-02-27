@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="article-page">
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.citation_display %}
+      <p class="citation-line">{{ page.citation_display }}</p>
+    {% endif %}
+
+    <div class="article-actions">
+      {% if page.pdf %}
+        <a class="button" href="{{ page.pdf | relative_url }}" download>Download PDF</a>
+      {% else %}
+        <span class="button button-muted" aria-disabled="true">PDF unavailable</span>
+      {% endif %}
+
+      {% if page.doi %}
+        <a class="text-link" href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>
+      {% endif %}
+
+      {% if page.external_url %}
+        <a class="text-link" href="{{ page.external_url }}">External link</a>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.abstract %}
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>{{ page.abstract }}</p>
+    </section>
+  {% endif %}
+
+  <section class="article-body">
+    {{ content }}
+  </section>
+
+  {% if page.tags and page.tags.size > 0 %}
+    <section aria-label="Article tags">
+      <ul class="tag-list">
+        {% for tag in page.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+</article>

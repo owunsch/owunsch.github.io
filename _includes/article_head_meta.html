@@ -1,0 +1,67 @@
+{% assign canonical_url = page.url | absolute_url %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{% for author in page.authors %}
+<meta name="citation_author" content="{{ author | escape }}">
+{% endfor %}
+<meta name="citation_publication_date" content="{{ page.year }}">
+{% if page.kind == "journal-article" and page.venue %}
+<meta name="citation_journal_title" content="{{ page.venue | escape }}">
+{% elsif page.kind == "book-chapter" and page.book_title %}
+<meta name="citation_book_title" content="{{ page.book_title | escape }}">
+{% elsif page.venue %}
+<meta name="citation_conference_title" content="{{ page.venue | escape }}">
+{% endif %}
+{% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.issue %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
+{% if page.pages %}
+{% assign normalized_pages = page.pages | replace: '–', '-' %}
+{% assign page_parts = normalized_pages | split: '-' %}
+{% if page_parts.size > 0 %}<meta name="citation_firstpage" content="{{ page_parts[0] | strip | escape }}">{% endif %}
+{% if page_parts.size > 1 %}<meta name="citation_lastpage" content="{{ page_parts[1] | strip | escape }}">{% endif %}
+{% endif %}
+{% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
+{% if page.pdf %}
+{% assign pdf_abs_url = page.pdf | absolute_url %}
+<meta name="citation_pdf_url" content="{{ pdf_abs_url }}">
+{% endif %}
+
+{% assign schema_type = "ScholarlyArticle" %}
+{% if page.kind == "book-chapter" %}
+{% assign schema_type = "Chapter" %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ schema_type }}",
+  "headline": {{ page.title | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "datePublished": {{ page.year | jsonify }},
+  "author": [
+    {% for author in page.authors %}
+    {
+      "@type": "Person",
+      "name": {{ author | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]{% if page.abstract %},
+  "description": {{ page.abstract | jsonify }}{% endif %}{% if page.doi %},
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": {{ page.doi | jsonify }}
+  }{% endif %}{% if page.pdf %},
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": {{ pdf_abs_url | jsonify }},
+    "encodingFormat": "application/pdf"
+  }{% endif %}{% if page.kind == "journal-article" and page.venue %},
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": {{ page.venue | jsonify }}
+  }{% elsif page.kind == "book-chapter" and page.book_title %},
+  "isPartOf": {
+    "@type": "Book",
+    "name": {{ page.book_title | jsonify }}
+  }{% endif %}
+}
+</script>

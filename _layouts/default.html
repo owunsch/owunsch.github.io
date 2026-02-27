@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.collection == 'articles' %}
+    {% include article_head_meta.html %}
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.site_owner.name }}</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/book/' | relative_url }}">Book</a></li>
+          <li><a href="{{ '/articles/' | relative_url }}">Articles</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content" id="content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>{{ site.site_owner.name }}{% if site.site_owner.affiliation %}, {{ site.site_owner.affiliation }}{% endif %}</p>
+      <p><a href="mailto:{{ site.site_owner.email }}">{{ site.site_owner.email }}</a></p>
+    </div>
+  </footer>
+</body>
+</html>

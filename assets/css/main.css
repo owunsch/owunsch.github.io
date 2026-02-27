@@ -1,0 +1,177 @@
+:root {
+  --bg: #f9f8f4;
+  --surface: #ffffff;
+  --text: #1f2428;
+  --muted: #545f6a;
+  --line: #d9dee3;
+  --accent: #0f3a57;
+  --accent-contrast: #ffffff;
+  --max-width: 46rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus {
+  text-decoration-thickness: 2px;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 2.2rem 0 3rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.article-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-meta,
+.book-meta,
+.citation-line {
+  color: var(--muted);
+}
+
+.article-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.button-muted {
+  background: #6d7781;
+}
+
+.text-link {
+  font-size: 0.95rem;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag-list li {
+  border: 1px solid var(--line);
+  background: #f2f3f5;
+  color: var(--muted);
+  font-size: 0.84rem;
+  padding: 0.18rem 0.5rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.footer-wrap p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 40rem) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    padding-top: 1.6rem;
+  }
+
+  body {
+    font-size: 0.98rem;
+  }
+}
