@@ -282,7 +282,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .book-intro {
+  main .book-intro {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 2rem;
@@ -290,12 +290,12 @@ h1 {
     margin: 1.25rem 0 2.25rem;
   }
 
-  .book-cover {
+  main .book-cover {
     align-self: start;
     text-align: left;
   }
 
-  .book-cover img {
+  main .book-cover img {
     width: 100%;
     max-width: 240px;
     height: auto;
@@ -305,15 +305,15 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .book-intro {
+  main .book-intro {
     display: block;
   }
 
-  .book-cover {
+  main .book-cover {
     text-align: center;
   }
 
-  .book-cover img {
+  main .book-cover img {
     width: auto;
     max-width: 260px;
     margin: 0 auto 1rem;
