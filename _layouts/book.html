@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="book-intro">
+  <div class="book-cover">
+    <img src="{{ page.cover_image | relative_url }}" alt="A Delicate Matter book cover" loading="lazy">
+  </div>
+  <div class="book-meta">
+    <h1>{{ site.book.title }}</h1>
+    <p class="book-publine">{{ site.book.publisher }}, {{ site.book.year }}</p>
+    <div class="book-description">
+      {% if site.book.description and site.book.description != "" %}
+        {{ site.book.description | markdownify }}
+      {% else %}
+        <p>Brief description placeholder. Add a short summary of the book's argument and scope.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if page.reviews and page.reviews.size > 0 %}
+<section class="book-reviews" aria-label="Selected reviews">
+  <h2>Selected Reviews</h2>
+  <section class="reviews-list">
+    {% for review in page.reviews %}
+      <article class="review-item">
+        <p class="review-quote">{{ review.quote }}</p>
+        <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
+      </article>
+    {% endfor %}
+  </section>
+</section>
+{% endif %}
+
+<section class="book-links" aria-label="Purchase and library links">
+  <h2>Purchase / Library Links</h2>
+  <ul>
+    <li>Publisher: {% if site.book.links.publisher != "" %}<a href="{{ site.book.links.publisher }}">Link</a>{% else %}TBD{% endif %}</li>
+    <li>WorldCat: {% if site.book.links.worldcat != "" %}<a href="{{ site.book.links.worldcat }}">Link</a>{% else %}TBD{% endif %}</li>
+  </ul>
+</section>

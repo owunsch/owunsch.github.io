@@ -1,6 +1,8 @@
 ---
 title: Book
 permalink: /book/
+layout: book
+cover_image: "/assets/img/a-delicate-matter-cover.jpg"
 reviews:
   - quote: "In an era of scholarship drunk on the sociological demystification of art, Oliver Wunsch’s book offers us that rare thing—a study of the social forces shaping art that illuminates aesthetic achievement."
     reviewer: "Michael W. Clune"
@@ -31,46 +33,3 @@ reviews:
     publication: "Journal for Eighteenth-Century Studies"
     url: "https://doi.org/10.1111/1754-0208.12978"
 ---
-
-<div class="book-intro">
-  <div class="book-cover">
-    <img
-      src="{{ '/assets/img/a-delicate-matter-cover.jpg' | relative_url }}"
-      alt="A Delicate Matter book cover"
-      loading="lazy">
-  </div>
-
-  <div class="book-meta">
-    <h2>{{ site.book.title }}</h2>
-
-    <p class="book-publine">{{ site.book.publisher }}, {{ site.book.year }}</p>
-
-    {% if site.book.description and site.book.description != "" %}
-    {{ site.book.description }}
-    {% else %}
-    Brief description placeholder. Add a short summary of the book's argument and scope.
-    {% endif %}
-
-    <h3>Purchase / Library Links</h3>
-
-    <ul>
-      <li>Publisher: {% if site.book.links.publisher != "" %}<a href="{{ site.book.links.publisher }}">Link</a>{% else %}TBD{% endif %}</li>
-      <li>WorldCat: {% if site.book.links.worldcat != "" %}<a href="{{ site.book.links.worldcat }}">Link</a>{% else %}TBD{% endif %}</li>
-    </ul>
-  </div>
-</div>
-
-{% if page.reviews and page.reviews.size > 0 %}
-<section class="book-reviews" aria-label="Selected reviews">
-  <h2>Selected Reviews</h2>
-
-  <section class="reviews-list">
-    {% for review in page.reviews %}
-      <article class="review-item">
-        <p class="review-quote">{{ review.quote }}</p>
-        <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
-      </article>
-    {% endfor %}
-  </section>
-</section>
-{% endif %}
