@@ -8,8 +8,6 @@ title: Home
     loading="lazy">
 </figure>
 
-# {{ site.site_owner.name }}
-
 {{ site.home_intro.short_blurb }}
 
 {% if site.site_owner.affiliation %}

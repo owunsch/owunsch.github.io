@@ -89,13 +89,13 @@ h1 {
 }
 
 .home-headshot {
-  margin: 0 0 1.5rem;
+  margin: 1.75rem 0 2.25rem;
   text-align: center;
 }
 
 .home-headshot img {
-  width: 100%;
-  max-width: 260px;
+  width: min(360px, 90%);
+  max-width: 360px;
   height: auto;
   border-radius: 4px;
   display: inline-block;
@@ -211,6 +211,11 @@ h1 {
   }
 
   .home-headshot {
-    margin-bottom: 1.25rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .home-headshot img {
+    width: 90%;
+    max-width: 360px;
   }
 }
