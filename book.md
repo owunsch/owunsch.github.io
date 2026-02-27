@@ -32,19 +32,18 @@ reviews:
     url: "https://doi.org/10.1111/1754-0208.12978"
 ---
 
-<section class="book-hero">
-  <figure class="book-hero-cover">
+<section class="book-intro">
+  <figure class="book-cover">
     <img
-      class="book-cover-image"
       src="{{ '/assets/img/a-delicate-matter-cover.jpg' | relative_url }}"
       alt="A Delicate Matter book cover"
       loading="lazy">
   </figure>
 
-  <div class="book-hero-content">
+  <div class="book-meta">
     <h2>{{ site.book.title }}</h2>
 
-    <p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }}</p>
+    <p class="book-publine">{{ site.book.publisher }}, {{ site.book.year }}</p>
 
     {% if site.book.description and site.book.description != "" %}
     {{ site.book.description }}
