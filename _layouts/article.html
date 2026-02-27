@@ -4,28 +4,28 @@ layout: default
 <article class="article-page">
   <header class="article-header">
     <h1>{{ page.title }}</h1>
-    {% if page.citation_display %}
+    {% if page.citation_display and page.citation_display != "" %}
       <p class="citation-line">{{ page.citation_display }}</p>
     {% endif %}
 
     <div class="article-actions">
-      {% if page.pdf %}
+      {% if page.pdf and page.pdf != "" %}
         <a class="button" href="{{ page.pdf | relative_url }}" download>Download PDF</a>
       {% else %}
         <span class="button button-muted" aria-disabled="true">PDF unavailable</span>
       {% endif %}
 
-      {% if page.doi %}
+      {% if page.doi and page.doi != "" %}
         <a class="text-link" href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>
       {% endif %}
 
-      {% if page.external_url %}
+      {% if page.external_url and page.external_url != "" %}
         <a class="text-link" href="{{ page.external_url }}">External link</a>
       {% endif %}
     </div>
   </header>
 
-  {% if page.abstract %}
+  {% if page.abstract and page.abstract != "" %}
     <section aria-labelledby="abstract-heading">
       <h2 id="abstract-heading">Abstract</h2>
       <p>{{ page.abstract }}</p>

@@ -11,8 +11,8 @@ publisher: "Harvard Art Museums / Yale University Press"
 pages: "74–85"
 doi: ""
 external_url: ""
-pdf: "/assets/pdfs/wunsch-making-up-race-2022.pdf"
-abstract: "Examining cosmetic culture and portraiture, this chapter analyzes how color and surface were mobilized to produce categories of race and femininity around Madame de Pompadour."
+pdf: ""
+abstract: ""
 tags:
   - "Pompadour"
   - "race"
@@ -20,4 +20,3 @@ tags:
   - "whiteness"
 citation_display: "Oliver Wunsch, “Making up Race: Whiteness, Pinkness, and Pompadour,” in *Madame de Pompadour: Painted Pink*, ed. A. Cassandra Albinson (Harvard Art Museums / Yale University Press, 2022), 74–85."
 ---
-This page hosts chapter metadata and download links for discovery and citation.

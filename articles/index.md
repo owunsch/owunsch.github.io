@@ -12,11 +12,13 @@ permalink: /articles/
     <h2><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
     <p class="article-meta">
       {{ article.year }}
-      {% if article.venue %} · {{ article.venue }}{% endif %}
-      {% if article.book_title %} · {{ article.book_title }}{% endif %}
+      {% if article.venue and article.venue != "" %} · {{ article.venue }}{% endif %}
+      {% if article.book_title and article.book_title != "" %} · {{ article.book_title }}{% endif %}
     </p>
-    {% if article.abstract %}
-      <p>{{ article.abstract | strip_html | truncate: 180 }}</p>
+    {% if article.abstract and article.abstract != "" %}
+      <p>{{ article.abstract | strip_html }}</p>
+    {% else %}
+      <p class="article-meta">Abstract forthcoming.</p>
     {% endif %}
     {% if article.tags and article.tags.size > 0 %}
       <ul class="tag-list">

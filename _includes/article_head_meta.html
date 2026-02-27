@@ -4,23 +4,23 @@
 <meta name="citation_author" content="{{ author | escape }}">
 {% endfor %}
 <meta name="citation_publication_date" content="{{ page.year }}">
-{% if page.kind == "journal-article" and page.venue %}
+{% if page.kind == "journal-article" and page.venue and page.venue != "" %}
 <meta name="citation_journal_title" content="{{ page.venue | escape }}">
-{% elsif page.kind == "book-chapter" and page.book_title %}
+{% elsif page.kind == "book-chapter" and page.book_title and page.book_title != "" %}
 <meta name="citation_book_title" content="{{ page.book_title | escape }}">
-{% elsif page.venue %}
+{% elsif page.venue and page.venue != "" %}
 <meta name="citation_conference_title" content="{{ page.venue | escape }}">
 {% endif %}
-{% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
-{% if page.issue %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
-{% if page.pages %}
+{% if page.volume and page.volume != "" %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.issue and page.issue != "" %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
+{% if page.pages and page.pages != "" %}
 {% assign normalized_pages = page.pages | replace: '–', '-' %}
 {% assign page_parts = normalized_pages | split: '-' %}
 {% if page_parts.size > 0 %}<meta name="citation_firstpage" content="{{ page_parts[0] | strip | escape }}">{% endif %}
 {% if page_parts.size > 1 %}<meta name="citation_lastpage" content="{{ page_parts[1] | strip | escape }}">{% endif %}
 {% endif %}
-{% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
-{% if page.pdf %}
+{% if page.doi and page.doi != "" %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
+{% if page.pdf and page.pdf != "" %}
 {% assign pdf_abs_url = page.pdf | absolute_url %}
 <meta name="citation_pdf_url" content="{{ pdf_abs_url }}">
 {% endif %}
@@ -43,22 +43,22 @@
       "name": {{ author | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  ]{% if page.abstract %},
-  "description": {{ page.abstract | jsonify }}{% endif %}{% if page.doi %},
+  ]{% if page.abstract and page.abstract != "" %},
+  "description": {{ page.abstract | jsonify }}{% endif %}{% if page.doi and page.doi != "" %},
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
     "value": {{ page.doi | jsonify }}
-  }{% endif %}{% if page.pdf %},
+  }{% endif %}{% if page.pdf and page.pdf != "" %},
   "encoding": {
     "@type": "MediaObject",
     "contentUrl": {{ pdf_abs_url | jsonify }},
     "encodingFormat": "application/pdf"
-  }{% endif %}{% if page.kind == "journal-article" and page.venue %},
+  }{% endif %}{% if page.kind == "journal-article" and page.venue and page.venue != "" %},
   "isPartOf": {
     "@type": "Periodical",
     "name": {{ page.venue | jsonify }}
-  }{% elsif page.kind == "book-chapter" and page.book_title %},
+  }{% elsif page.kind == "book-chapter" and page.book_title and page.book_title != "" %},
   "isPartOf": {
     "@type": "Book",
     "name": {{ page.book_title | jsonify }}
