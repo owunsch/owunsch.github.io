@@ -49,7 +49,7 @@ Brief description placeholder. Add a short summary of the book's argument and sc
 <section class="reviews-list" aria-label="Selected reviews">
   {% for review in page.reviews %}
     <article class="review-item">
-      <blockquote>{{ review.quote }}</blockquote>
+      <p class="review-quote">{{ review.quote }}</p>
       <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
     </article>
   {% endfor %}

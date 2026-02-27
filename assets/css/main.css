@@ -153,17 +153,20 @@ h1 {
 }
 
 .review-item {
-  padding: 0.95rem 0;
+  padding: 1.35rem 0;
   border-top: 1px solid var(--line);
 }
 
-.review-item blockquote {
+.review-quote {
   margin: 0;
   padding: 0;
+  text-align: left;
+  font-size: 1.04rem;
 }
 
 .review-attribution {
-  margin: 0.6rem 0 0;
+  margin: 0.7rem 0 0 1rem;
+  font-size: 0.94rem;
   color: var(--muted);
 }
 
