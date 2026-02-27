@@ -33,15 +33,16 @@ reviews:
 ---
 # Book
 
-<section class="book-profile">
-  <figure class="book-cover">
+<section class="book-hero">
+  <figure class="book-hero-cover">
     <img
+      class="book-cover-image"
       src="{{ '/assets/img/a-delicate-matter-cover.jpg' | relative_url }}"
       alt="A Delicate Matter book cover"
       loading="lazy">
   </figure>
 
-  <div class="book-details">
+  <div class="book-hero-content">
     <h2>{{ site.book.title }}</h2>
 
     <p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }}</p>

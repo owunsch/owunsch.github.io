@@ -113,27 +113,29 @@ h1 {
   margin: 0;
 }
 
-.book-profile {
-  display: flex;
-  flex-direction: column;
+.book-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
   margin: 1rem 0 2rem;
 }
 
-.book-cover {
+.book-hero-cover {
   width: min(90%, 260px);
   max-width: 260px;
-  margin: 0 0 1.25rem;
-  align-self: center;
+  margin: 0 auto 1.25rem;
 }
 
-.book-cover img {
+.book-hero-cover .book-cover-image {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 260px;
   height: auto;
+  margin: 0;
 }
 
-.book-details {
+.book-hero-content {
   min-width: 0;
 }
 
@@ -268,22 +270,24 @@ h1 {
     flex: 1;
   }
 
-  .book-profile {
-    flex-direction: row;
-    align-items: flex-start;
+  .book-hero {
+    grid-template-columns: 240px minmax(0, 1fr);
     gap: 2rem;
+    align-items: flex-start;
     margin: 1.25rem 0 2.25rem;
   }
 
-  .book-cover {
-    flex: 0 0 240px;
+  .book-hero-cover {
     width: 240px;
     max-width: 240px;
     margin: 0;
-    align-self: flex-start;
   }
 
-  .book-details {
-    flex: 1;
+  .book-hero-cover .book-cover-image {
+    max-width: 240px;
+  }
+
+  .book-hero-content {
+    min-width: 0;
   }
 }
