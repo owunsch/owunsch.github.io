@@ -10,7 +10,7 @@ season: "Fall"
 pages: ""
 doi: ""
 external_url: "https://www.journal18.org/5218"
-pdf: ""
+pdf: "/assets/pdfs/wunsch-carriera-four-continents-2020.pdf"
 abstract: ""
 tags:
   - "Rosalba Carriera"

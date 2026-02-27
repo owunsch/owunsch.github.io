@@ -11,7 +11,7 @@ publisher: "Harvard Art Museums / Yale University Press"
 pages: "74–85"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-making-up-race-2022.pdf"
 abstract: ""
 tags:
   - "Pompadour"

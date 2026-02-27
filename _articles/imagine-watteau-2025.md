@@ -11,7 +11,7 @@ publisher: "Clark Art Institute / Yale University Press"
 pages: "240–49"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-imagine-watteau-2025.pdf"
 abstract: ""
 tags:
   - "Watteau"

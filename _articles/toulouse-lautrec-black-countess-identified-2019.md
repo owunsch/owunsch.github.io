@@ -11,7 +11,7 @@ month: "October"
 pages: "840–845"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-toulouse-lautrec-black-countess-identified-2019.pdf"
 abstract: ""
 tags:
   - "Toulouse-Lautrec"

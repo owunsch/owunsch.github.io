@@ -10,7 +10,7 @@ issue: "8"
 pages: "1–12"
 doi: ""
 external_url: "https://h-france.net/Salon/SalonVol14no08.2.Wunsch.pdf"
-pdf: ""
+pdf: "/assets/pdfs/wunsch-discriminating-taste-2022.pdf"
 abstract: ""
 tags:
   - "eighteenth-century"

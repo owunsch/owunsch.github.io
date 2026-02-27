@@ -11,7 +11,7 @@ month: "February"
 pages: "14–44"
 doi: "10.1093/arthis/ulaf013"
 external_url: "https://doi.org/10.1093/arthis/ulaf013"
-pdf: ""
+pdf: "/assets/pdfs/wunsch-aesthetic-redemption-2025.pdf"
 abstract: ""
 tags:
   - "eighteenth-century"

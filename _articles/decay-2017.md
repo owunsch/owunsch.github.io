@@ -11,7 +11,7 @@ publisher: "Harvard Art Museums / Yale University Press"
 pages: "211–21"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-decay-2017.pdf"
 abstract: ""
 tags:
   - "art and science"

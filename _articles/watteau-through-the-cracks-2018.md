@@ -11,7 +11,7 @@ month: "June"
 pages: "37–60"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-watteau-through-the-cracks-2018.pdf"
 abstract: ""
 tags:
   - "Watteau"

@@ -11,7 +11,7 @@ month: ""
 pages: "63–78"
 doi: ""
 external_url: ""
-pdf: ""
+pdf: "/assets/pdfs/wunsch-diderot-and-the-materiality-of-posterity-2018.pdf"
 abstract: ""
 tags:
   - "Diderot"
