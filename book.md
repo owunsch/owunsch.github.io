@@ -35,7 +35,7 @@ reviews:
 
 ## {{ site.book.title }}
 
-<p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }} ({{ site.book.status }})</p>
+<p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }}</p>
 
 {% if site.book.description and site.book.description != "" %}
 {{ site.book.description }}
