@@ -10,6 +10,10 @@ reviews:
     reviewer: "Mimi Hellman"
     publication: "CAA Reviews"
     url: "https://www.caareviews.org/reviews/4255"
+  - quote: "This handsomely designed and illustrated volume is an original, concise, and brilliant study of the concept and nature of delicacy across four eighteenth-century French case-studies and an epilogue."
+    reviewer: "Mark Ledbury"
+    publication: "Journal of the History of Collections"
+    url: "https://academic.oup.com/jhc/advance-article-abstract/doi/10.1093/jhc/fhaf039/8371856"
   - quote: "Central to Wunsch’s remarkably tight-focused book is the suggestion that the perishability of art, long seen by art historians as little more than an impediment to research, is a subject of interest in itself; a feature, rather than a bug."
     reviewer: "Kirsten Tambling"
     publication: "Apollo Magazine"
@@ -26,10 +30,6 @@ reviews:
     reviewer: "Frédérique Baumgartner"
     publication: "Journal for Eighteenth-Century Studies"
     url: "https://doi.org/10.1111/1754-0208.12978"
-  - quote: "This handsomely designed and illustrated volume is an original, concise, and brilliant study of the concept and nature of delicacy across four eighteenth-century French case-studies and an epilogue."
-    reviewer: "Mark Ledbury"
-    publication: "Journal of the History of Collections"
-    url: "https://academic.oup.com/jhc/advance-article-abstract/doi/10.1093/jhc/fhaf039/8371856"
 ---
 # Book
 
