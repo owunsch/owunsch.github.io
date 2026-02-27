@@ -4,6 +4,7 @@
   --text: #1f2428;
   --muted: #545f6a;
   --line: #d9dee3;
+  --rule-color: #d9dee3;
   --accent: #0f3a57;
   --accent-contrast: #ffffff;
   --max-width: 46rem;
@@ -124,6 +125,20 @@ h1 {
 
 .book-publine {
   color: var(--muted);
+}
+
+.book-meta > p {
+  margin-top: 0;
+}
+
+.book-meta > *:last-child {
+  margin-bottom: 0;
+}
+
+.book-reviews {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule-color);
 }
 
 .article-item {

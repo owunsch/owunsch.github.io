@@ -51,19 +51,6 @@ reviews:
     Brief description placeholder. Add a short summary of the book's argument and scope.
     {% endif %}
 
-    {% if page.reviews and page.reviews.size > 0 %}
-    <h2>Selected Reviews</h2>
-
-    <section class="reviews-list" aria-label="Selected reviews">
-      {% for review in page.reviews %}
-        <article class="review-item">
-          <p class="review-quote">{{ review.quote }}</p>
-          <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
-        </article>
-      {% endfor %}
-    </section>
-    {% endif %}
-
     <h3>Purchase / Library Links</h3>
 
     <ul>
@@ -72,3 +59,18 @@ reviews:
     </ul>
   </div>
 </section>
+
+{% if page.reviews and page.reviews.size > 0 %}
+<section class="book-reviews" aria-label="Selected reviews">
+  <h2>Selected Reviews</h2>
+
+  <section class="reviews-list">
+    {% for review in page.reviews %}
+      <article class="review-item">
+        <p class="review-quote">{{ review.quote }}</p>
+        <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
+      </article>
+    {% endfor %}
+  </section>
+</section>
+{% endif %}
