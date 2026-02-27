@@ -113,6 +113,30 @@ h1 {
   margin: 0;
 }
 
+.book-profile {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 2rem;
+}
+
+.book-cover {
+  width: min(90%, 260px);
+  max-width: 260px;
+  margin: 0 0 1.25rem;
+  align-self: center;
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.book-details {
+  min-width: 0;
+}
+
 .article-item {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -241,6 +265,25 @@ h1 {
   }
 
   .home-intro {
+    flex: 1;
+  }
+
+  .book-profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1.25rem 0 2.25rem;
+  }
+
+  .book-cover {
+    flex: 0 0 240px;
+    width: 240px;
+    max-width: 240px;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .book-details {
     flex: 1;
   }
 }

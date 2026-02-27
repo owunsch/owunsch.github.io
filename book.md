@@ -33,30 +33,43 @@ reviews:
 ---
 # Book
 
-## {{ site.book.title }}
+<section class="book-profile">
+  <figure class="book-cover">
+    <img
+      src="{{ '/assets/img/a-delicate-matter-cover.jpg' | relative_url }}"
+      alt="A Delicate Matter book cover"
+      loading="lazy">
+  </figure>
 
-<p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }}</p>
+  <div class="book-details">
+    <h2>{{ site.book.title }}</h2>
 
-{% if site.book.description and site.book.description != "" %}
-{{ site.book.description }}
-{% else %}
-Brief description placeholder. Add a short summary of the book's argument and scope.
-{% endif %}
+    <p class="book-meta">{{ site.book.publisher }}, {{ site.book.year }}</p>
 
-{% if page.reviews and page.reviews.size > 0 %}
-## Selected Reviews
+    {% if site.book.description and site.book.description != "" %}
+    {{ site.book.description }}
+    {% else %}
+    Brief description placeholder. Add a short summary of the book's argument and scope.
+    {% endif %}
 
-<section class="reviews-list" aria-label="Selected reviews">
-  {% for review in page.reviews %}
-    <article class="review-item">
-      <p class="review-quote">{{ review.quote }}</p>
-      <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
-    </article>
-  {% endfor %}
+    {% if page.reviews and page.reviews.size > 0 %}
+    <h2>Selected Reviews</h2>
+
+    <section class="reviews-list" aria-label="Selected reviews">
+      {% for review in page.reviews %}
+        <article class="review-item">
+          <p class="review-quote">{{ review.quote }}</p>
+          <p class="review-attribution">&mdash; {{ review.reviewer }}, <a href="{{ review.url }}" target="_blank" rel="noopener noreferrer">{{ review.publication }}</a></p>
+        </article>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    <h3>Purchase / Library Links</h3>
+
+    <ul>
+      <li>Publisher: {% if site.book.links.publisher != "" %}<a href="{{ site.book.links.publisher }}">Link</a>{% else %}TBD{% endif %}</li>
+      <li>WorldCat: {% if site.book.links.worldcat != "" %}<a href="{{ site.book.links.worldcat }}">Link</a>{% else %}TBD{% endif %}</li>
+    </ul>
+  </div>
 </section>
-{% endif %}
-
-### Purchase / Library Links
-
-- Publisher: {% if site.book.links.publisher != "" %}[Link]({{ site.book.links.publisher }}){% else %}TBD{% endif %}
-- WorldCat: {% if site.book.links.worldcat != "" %}[Link]({{ site.book.links.worldcat }}){% else %}TBD{% endif %}
