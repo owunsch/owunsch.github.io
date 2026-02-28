@@ -156,7 +156,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.work-body h2 {
+.work-title {
   margin-bottom: 0.6rem;
 }
 
@@ -291,20 +291,38 @@ h1 {
 
 .work-card {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 140px 1fr;
+  grid-template-areas:
+    "thumb head"
+    "details details";
+  gap: 1rem 1.5rem;
   align-items: start;
+}
+
+.work-thumb {
+  grid-area: thumb;
+}
+
+.work-head {
+  grid-area: head;
+}
+
+.work-details {
+  grid-area: details;
 }
 
 .work-card--no-thumb {
   grid-template-columns: 1fr;
+  grid-template-areas:
+    "head"
+    "details";
 }
 
 .article-list .work-thumb img {
   display: block;
   width: 100%;
-  max-width: 160px;
-  height: 110px;
+  max-width: 140px;
+  height: 96px;
   object-fit: cover;
   border-radius: 2px;
 }
@@ -312,11 +330,15 @@ h1 {
 @media (max-width: 640px) {
   .work-card {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "thumb"
+      "head"
+      "details";
   }
 
   .article-list .work-thumb img {
     max-width: 100%;
-    height: 200px;
+    height: 180px;
   }
 }
 
