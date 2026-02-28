@@ -32,6 +32,8 @@ home_intro:
  
 book:
   title: "A Delicate Matter: Art, Fragility, and Consumption in Eighteenth-Century France"
+  authors:
+  - "Oliver Wunsch"
   year: 2024
   publisher: "Pennsylvania State University Press"
   status: "published"
