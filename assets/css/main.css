@@ -157,7 +157,7 @@ h1 {
 }
 
 .work-title {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.25rem;
 }
 
 .work-feature {
@@ -304,7 +304,7 @@ main .work-feature-img {
     "thumb head"
     "details details";
   column-gap: 1.5rem;
-  row-gap: 0.5rem;
+  row-gap: 0.4rem;
   align-items: start;
 }
 
@@ -321,13 +321,22 @@ main .work-feature-img {
   margin-top: 0;
 }
 
+.work-kind {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.work-details > :first-child {
+  margin-top: 0;
+}
+
 .work-card.no-thumb {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "head"
     "details";
-  row-gap: 0.5rem;
+  row-gap: 0.4rem;
 }
 
 .work-thumb img {
@@ -346,7 +355,7 @@ main .work-feature-img {
       "thumb"
       "head"
       "details";
-    row-gap: 0.5rem;
+    row-gap: 0.4rem;
   }
 
   .work-thumb img {
