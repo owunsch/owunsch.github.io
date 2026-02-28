@@ -297,13 +297,14 @@ main .work-feature-img {
 
 }
 
-.work-card {
+.work-card.has-thumb {
   display: grid;
   grid-template-columns: 140px 1fr;
   grid-template-areas:
     "thumb head"
     "details details";
-  gap: 1rem 1.5rem;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
   align-items: start;
 }
 
@@ -317,13 +318,16 @@ main .work-feature-img {
 
 .work-details {
   grid-area: details;
+  margin-top: 0;
 }
 
 .work-card.no-thumb {
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "head"
     "details";
+  row-gap: 0.5rem;
 }
 
 .work-thumb img {
@@ -342,6 +346,7 @@ main .work-feature-img {
       "thumb"
       "head"
       "details";
+    row-gap: 0.5rem;
   }
 
   .work-thumb img {
