@@ -9,7 +9,7 @@ permalink: /articles/
 <ul class="article-list">
 {% for work in sorted_articles %}
   <li class="article-item">
-    <div class="work-card{% unless work.image and work.image != '' %} work-card--no-thumb{% endunless %}">
+    <div class="work-card{% unless work.image and work.image != '' %} no-thumb{% endunless %}">
       {% if work.image and work.image != "" %}
         <a class="work-thumb" href="{{ work.url | relative_url }}">
           <img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
