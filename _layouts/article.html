@@ -6,7 +6,7 @@ layout: default
     {% if page.image and page.image != "" %}
       {% assign hero_alt = page.image_alt | default: page.title %}
       <div class="work-hero-media">
-        <img src="{{ page.image | relative_url }}" alt="{{ hero_alt }}">
+        <img class="work-hero-img" src="{{ page.image | relative_url }}" alt="{{ hero_alt }}">
       </div>
     {% endif %}
 

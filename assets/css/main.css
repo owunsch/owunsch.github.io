@@ -181,7 +181,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.work-hero-media img {
+main .work-hero-media img.work-hero-img {
   max-width: 320px;
   width: 90%;
   margin: 0 auto;
@@ -434,9 +434,11 @@ h1 {
   .work-hero-media {
     text-align: center;
     margin-bottom: 1rem;
+    width: auto;
+    max-width: none;
   }
 
-  .work-hero-media img {
+  main .work-hero-media img.work-hero-img {
     max-width: 320px;
     width: 90%;
     margin: 0 auto;
@@ -456,12 +458,14 @@ h1 {
   }
 
   .work-hero-media {
+    width: 320px;
+    max-width: 320px;
     text-align: left;
     margin-bottom: 0;
   }
 
-  .work-hero-media img {
-    width: 100%;
+  main .work-hero-media img.work-hero-img {
+    width: 320px;
     max-width: 320px;
     height: auto;
     display: block;
