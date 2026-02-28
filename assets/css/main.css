@@ -150,14 +150,25 @@ h1 {
 }
 
 .article-item {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  padding: 1rem;
-  margin-bottom: 1rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 1.4rem 0 1.6rem;
+  margin: 0;
 }
 
 .work-title {
   margin-bottom: 0.25rem;
+}
+
+.work-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.work-title a:hover,
+.work-title a:focus {
+  text-decoration: underline;
 }
 
 .work-feature {
@@ -324,10 +335,39 @@ main .work-feature-img {
 .work-kind {
   margin-top: 0;
   margin-bottom: 0.25rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .work-details > :first-child {
   margin-top: 0;
+}
+
+.work-citation {
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.work-abstract {
+  margin: 0.5rem 0 0;
+}
+
+.work-links {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.work-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-links a:hover,
+.work-links a:focus {
+  text-decoration: underline;
 }
 
 .work-card.no-thumb {
