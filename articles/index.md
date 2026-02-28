@@ -1,8 +1,8 @@
 ---
-title: Articles
+title: Essays
 permalink: /articles/
 ---
-# Articles
+# Essays
 
 {% assign sorted_articles = site.articles | sort: 'year' | reverse %}
 

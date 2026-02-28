@@ -4,7 +4,7 @@ This repository contains a GitHub Pages-compatible Jekyll site with:
 
 - Home page (`/`)
 - Book page (`/book/`)
-- Articles index (`/articles/`)
+- Essays index (`/articles/`)
 - Individual article pages generated from the `_articles` collection
 
 ## Add a new article
