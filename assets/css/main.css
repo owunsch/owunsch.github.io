@@ -171,16 +171,22 @@ h1 {
   text-decoration: underline;
 }
 
-.work-feature {
-  margin: 1.25rem 0 1.5rem;
+.work-hero {
+  display: block;
+  margin: 0 0 1.25rem;
 }
 
-main .work-feature-img {
-  display: block;
-  width: 100%;
+.work-hero-media {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.work-hero-media img {
   max-width: 320px;
+  width: 90%;
+  margin: 0 auto;
   height: auto;
-  margin: 0;
+  display: block;
 }
 
 .article-meta,
@@ -420,14 +426,48 @@ main .work-feature-img {
   }
 }
 
-@media (max-width: 640px) {
-  main .work-feature-img {
-    max-width: 90%;
+@media (max-width: 767px) {
+  .work-hero {
+    display: block;
+  }
+
+  .work-hero-media {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .work-hero-media img {
+    max-width: 320px;
+    width: 90%;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
+  .work-hero {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .work-hero--no-image {
+    grid-template-columns: 1fr;
+  }
+
+  .work-hero-media {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .work-hero-media img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
   main .book-intro {
     display: grid;
     grid-template-columns: 240px 1fr;
