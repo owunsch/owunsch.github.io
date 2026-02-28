@@ -189,6 +189,14 @@ main .work-hero-media img.work-hero-img {
   display: block;
 }
 
+.work-meta {
+  margin-bottom: 1rem;
+}
+
+.work-body {
+  max-width: 100%;
+}
+
 .article-meta,
 .citation-line {
   color: var(--muted);
@@ -451,6 +459,7 @@ main .work-hero-media img.work-hero-img {
     grid-template-columns: 320px 1fr;
     gap: 2rem;
     align-items: start;
+    margin-bottom: 1.25rem;
   }
 
   .work-hero--no-image {
@@ -470,6 +479,11 @@ main .work-hero-media img.work-hero-img {
     height: auto;
     display: block;
     margin: 0;
+  }
+
+  .work-meta,
+  .work-body {
+    max-width: none;
   }
 
   main .book-intro {

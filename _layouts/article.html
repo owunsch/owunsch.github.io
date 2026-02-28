@@ -10,48 +10,53 @@ layout: default
       </div>
     {% endif %}
 
-    <header class="article-header work-hero-text">
+    <div class="work-hero-title">
       <h1>{{ page.title }}</h1>
-      {% if page.citation_display and page.citation_display != "" %}
-        <div class="citation-line">{{ page.citation_display | markdownify }}</div>
-      {% endif %}
-
-      <div class="article-actions">
-        {% if page.pdf and page.pdf != "" %}
-          <a class="button" href="{{ page.pdf | relative_url }}" download>Download PDF</a>
-        {% else %}
-          <span class="button button-muted" aria-disabled="true">PDF unavailable</span>
-        {% endif %}
-
-        {% if page.doi and page.doi != "" %}
-          <a class="text-link" href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>
-        {% endif %}
-
-        {% if page.external_url and page.external_url != "" %}
-          <a class="text-link" href="{{ page.external_url }}">External link</a>
-        {% endif %}
-      </div>
-    </header>
+    </div>
   </div>
 
-  {% if page.abstract and page.abstract != "" %}
-    <section aria-labelledby="abstract-heading">
-      <h2 id="abstract-heading">Abstract</h2>
-      <p>{{ page.abstract }}</p>
-    </section>
-  {% endif %}
+  <div class="work-meta">
+    {% if page.citation_display and page.citation_display != "" %}
+      <div class="citation-line">{{ page.citation_display | markdownify }}</div>
+    {% endif %}
 
-  <section class="article-body">
-    {{ content }}
-  </section>
+    <div class="article-actions">
+      {% if page.pdf and page.pdf != "" %}
+        <a class="button" href="{{ page.pdf | relative_url }}" download>Download PDF</a>
+      {% else %}
+        <span class="button button-muted" aria-disabled="true">PDF unavailable</span>
+      {% endif %}
 
-  {% if page.tags and page.tags.size > 0 %}
-    <section aria-label="Article tags">
-      <ul class="tag-list">
-        {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
+      {% if page.doi and page.doi != "" %}
+        <a class="text-link" href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>
+      {% endif %}
+
+      {% if page.external_url and page.external_url != "" %}
+        <a class="text-link" href="{{ page.external_url }}">External link</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="work-body">
+    {% if page.abstract and page.abstract != "" %}
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+        <p>{{ page.abstract }}</p>
+      </section>
+    {% endif %}
+
+    <section class="article-body">
+      {{ content }}
     </section>
-  {% endif %}
+
+    {% if page.tags and page.tags.size > 0 %}
+      <section aria-label="Article tags">
+        <ul class="tag-list">
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  </div>
 </article>
