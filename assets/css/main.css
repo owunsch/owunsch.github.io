@@ -156,6 +156,34 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.article-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article-thumb img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-listing-text h2 {
+  margin-bottom: 0.6rem;
+}
+
+.article-hero {
+  margin: 0 0 1.25rem;
+}
+
+.article-hero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .article-meta,
 .citation-line {
   color: var(--muted);
@@ -279,6 +307,19 @@ h1 {
     flex: 1;
   }
 
+}
+
+@media (min-width: 768px) {
+  .article-listing {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .article-thumb img {
+    max-width: 180px;
+  }
 }
 
 @media (min-width: 768px) {
