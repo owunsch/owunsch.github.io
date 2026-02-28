@@ -12,6 +12,7 @@ pages: "240–49"
 doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-imagine-watteau-2025.pdf"
+image: "/assets/img/imagine-watteau.jpg"
 abstract: "A short essay on the strange sadness of A.I.-based art restoration."
 tags:
   - "Watteau"
