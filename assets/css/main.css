@@ -398,9 +398,25 @@ main .work-feature-img {
     row-gap: 0.4rem;
   }
 
+  .work-card.has-thumb {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "thumb"
+      "head"
+      "details";
+  }
+
+  .work-thumb {
+    display: block;
+    width: 100%;
+  }
+
   .work-thumb img {
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
     height: 180px;
+    object-fit: cover;
+    display: block;
   }
 }
 
