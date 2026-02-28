@@ -13,7 +13,7 @@ doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-imagine-watteau-2025.pdf"
 image: "/assets/img/imagine-watteau.jpg"
-abstract: "A short essay on the strange sadness of A.I.-based art restoration."
+abstract: "Artificial intelligence promises to transform the field of art restoration, offering the possibility of reconstructing works long thought lost. In an admittedly unscientific experiment, I use Midjourney to simulate Antoine Watteau’s missing Abigail Bringing Food to David, only to find that the result elicits a peculiar sadness. The image’s uncanny blend of familiarity and artifice suggests that generative AI does not restore the past so much as recombine the most recognizable features of what survives, confronting art historians with their own expectations about what an artist is supposed to look like and what it means to fill a gap in the record"
 tags:
   - "Watteau"
   - "decay"
