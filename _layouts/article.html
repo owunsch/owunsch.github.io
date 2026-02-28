@@ -41,7 +41,7 @@ layout: default
     {% if page.abstract and page.abstract != "" %}
       <section aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
-        <p>{{ page.abstract }}</p>
+        {{ page.abstract | markdownify }}
       </section>
     {% endif %}
 
