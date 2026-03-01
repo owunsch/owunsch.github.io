@@ -134,13 +134,13 @@ h1 {
   margin-top: 0;
 }
 
+.book-meta > *:last-child {
+  margin-bottom: 0;
+}
+
 .book-meta p.book-intro-link {
   margin-top: 0.4rem;
   margin-bottom: 1.2rem;
-}
-
-.book-meta > *:last-child {
-  margin-bottom: 0;
 }
 
 .book-reviews {
