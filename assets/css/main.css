@@ -129,12 +129,14 @@ h1 {
   color: var(--muted);
 }
 
-.book-intro-link {
-  margin: 0.4rem 0 1.2rem 0;
-}
 
 .book-meta > p {
   margin-top: 0;
+}
+
+.book-meta p.book-intro-link {
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .book-meta > *:last-child {
