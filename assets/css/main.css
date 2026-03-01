@@ -138,8 +138,12 @@ h1 {
   margin-bottom: 0;
 }
 
+.book-meta .book-publine {
+  margin: 0 0 0.4rem 0;  /* no top, small bottom */
+}
+
 .book-meta p.book-intro-link {
-  margin: 0.4rem 0 1.2rem 0;
+  margin: 0.1rem 0 1.2rem 0;
 }
 
 .book-description p:first-child {
