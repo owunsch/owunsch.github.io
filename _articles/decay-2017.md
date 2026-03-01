@@ -8,7 +8,7 @@ book_title: "The Philosophy Chamber: Art and Science in Harvard’s Teaching Cab
 editors:
   - "Ethan Lasser"
 publisher: "Harvard Art Museums / Yale University Press"
-pages: "211–21"
+pages: "211–221"
 doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-decay-2017.pdf"
