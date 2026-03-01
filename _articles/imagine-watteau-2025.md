@@ -8,7 +8,7 @@ book_title: "Breaking the Silence: Methods of Writing Art History"
 editors:
   - "Caroline Fowler"
 publisher: "Clark Art Institute / Yale University Press"
-pages: "240–49"
+pages: "240–249"
 doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-imagine-watteau-2025.pdf"
