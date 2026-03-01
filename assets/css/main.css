@@ -130,16 +130,12 @@ h1 {
 }
 
 
-.book-meta > p {
-  margin-top: 0;
-}
-
 .book-meta > *:last-child {
   margin-bottom: 0;
 }
 
 .book-meta .book-publine {
-  margin: 0 0 0.4rem 0;  /* no top, small bottom */
+  margin: 0 0 0.4rem 0;  
 }
 
 .book-meta p.book-intro-link {
