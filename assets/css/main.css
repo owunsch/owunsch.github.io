@@ -139,8 +139,11 @@ h1 {
 }
 
 .book-meta p.book-intro-link {
-  margin-top: 0.4rem;
-  margin-bottom: 1.2rem;
+  margin: 0.4rem 0 1.2rem 0;
+}
+
+.book-description p:first-child {
+  margin-top: 0;
 }
 
 .book-reviews {
