@@ -377,6 +377,10 @@ main .work-hero-media img.work-hero-img {
   margin: 0.5rem 0 0;
 }
 
+.work-abstract p {
+  margin: 0;
+}
+
 .work-links {
   margin: 0.45rem 0 0;
   font-size: 0.9rem;
