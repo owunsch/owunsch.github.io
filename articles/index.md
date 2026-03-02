@@ -28,7 +28,7 @@ permalink: /articles/
           <div class="work-citation citation-line">{{ work.citation_display | markdownify }}</div>
         {% endif %}
         {% if work.abstract and work.abstract != "" %}
-          <div class="work-abstract">{{ work.abstract | markdownify | strip_html | truncatewords: 30, "…" }}</div>
+          <div class="work-abstract">{{ work.abstract | markdownify | strip_html | truncatewords: 36, "…" }}</div>
         {% endif %}
         {% if (work.pdf and work.pdf != "") or (work.doi and work.doi != "") %}
           <p class="work-links">
