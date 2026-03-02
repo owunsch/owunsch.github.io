@@ -12,6 +12,7 @@ pages: "211–221"
 doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-decay-2017.pdf"
+img: "/assets/img/philosophy-chamber.jpg"
 abstract: ""
 tags:
   - "art and science"
