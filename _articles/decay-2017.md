@@ -13,7 +13,7 @@ doi: ""
 external_url: ""
 pdf: "/assets/pdfs/wunsch-decay-2017.pdf"
 image: "/assets/img/philosophy-chamber.jpg"
-abstract: "Written to accompany the 2017 exhibition *The Philosophy Chamber: Art and Science in Harvard’s Teaching Cabinet, 1766–1820* at the Harvard Art Museums, this essay examines the role of decay in the early history of Harvard’s collections. Through case studies ranging from taxidermied birds to plaster casts of the Laocoön, it shows how late eighteenth- and early nineteenth-century attitudes toward material loss shifted alongside emerging ideas about national history, antiquity, and posterity. By probing the tension between use and preservation, the essay argues that modern museum culture’s drive to conserve objects at all costs risks erasing an earlier understanding of collections as living, vulnerable, and inseparable from processes of destruction."
+abstract: "This essay, which accompanied the 2017 exhibition *The Philosophy Chamber* at the Harvard Art Museums, examines the role of decay in the early history of Harvard’s collections. Through case studies ranging from taxidermied birds to plaster casts of the Laocoön, it shows how late eighteenth- and early nineteenth-century attitudes toward material loss shifted alongside emerging ideas about national history, antiquity, and posterity. By probing the tension between use and preservation, the essay argues that modern museum culture’s drive to conserve objects at all costs risks erasing an earlier understanding of collections as living, vulnerable, and inseparable from processes of destruction."
 tags:
   - "art and science"
   - "materiality"
