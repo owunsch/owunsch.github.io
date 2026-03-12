@@ -5,6 +5,9 @@ baseurl: ""
 markdown: kramdown
 permalink: pretty
 
+plugins:
+  - jekyll-sitemap
+  
 collections:
   articles:
     output: true
