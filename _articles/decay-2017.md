@@ -11,7 +11,7 @@ publisher: "Harvard Art Museums / Yale University Press"
 pages: "211–221"
 doi: ""
 external_url: ""
-pdf: "/assets/pdfs/wunsch-decay-2017.pdf"
+pdf: "/articles/decay-2017/wunsch-decay-2017.pdf"
 image: "/assets/img/philosophy-chamber.jpg"
 abstract: "This essay, which accompanied the 2017 exhibition *The Philosophy Chamber* at the Harvard Art Museums, examines the role of decay in the early history of Harvard’s collections. Through case studies ranging from taxidermied birds to plaster casts of the Laocoön, it shows how late eighteenth- and early nineteenth-century attitudes toward material loss shifted alongside emerging ideas about national history, antiquity, and posterity. By probing the tension between use and preservation, the essay argues that modern museum culture’s drive to conserve objects at all costs risks erasing an earlier acceptance of change as part of what makes collections vital."
 tags:
