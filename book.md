@@ -32,4 +32,8 @@ reviews:
     reviewer: "Frédérique Baumgartner"
     publication: "Journal for Eighteenth-Century Studies"
     url: "https://doi.org/10.1111/1754-0208.12978"
+  - quote: "A deeply considered and elegantly written study of how material fragility shaped artistic meaning during the Ancien Régime."
+    reviewer: "Elisa Cazzato"
+    publication: "Studi Francesi"
+    url: "https://doi.org/10.4000/16b9r"
 ---
