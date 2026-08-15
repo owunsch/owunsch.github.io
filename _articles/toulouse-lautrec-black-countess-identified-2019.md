@@ -13,7 +13,7 @@ doi: ""
 external_url: ""
 pdf: "/articles/toulouse-lautrec-black-countess-identified-2019/wunsch-toulouse-lautrec-black-countess-identified-2019.pdf"
 image: "/assets/img/black-countess.jpg"
-abstract: "Henri de Toulouse-Lautrec’s 1881 painting *The Black Countess* portrays a Black woman speeding along the coast of Nice. For more than a century, her identity remained unknown. Archival research presented here reveals her to be Anne Justine Angèle Delva de Dalmarie, a Haitian-born aristocrat who became a minor celebrity in the French press. Recovering her name clarifies the painting’s social context while exposing a deeper paradox: in the belle époque, Black visibility could generate a form of notoriety without deeper personal recognition, leaving a woman's individuality obscured behind a racialized public image."
+abstract: "Henri de Toulouse-Lautrec’s 1881 painting *The Black Countess* portrays a Black woman speeding along the coast of Nice. For more than a century, her identity remained unknown. By cross-referencing newspaper reports against municipal archives, I identify her here as Anne Justine Angèle Delva de Dalmarie, a Haitian-born aristocrat who became a minor celebrity in the French press."
 tags:
   - "Toulouse-Lautrec"
   - "portraiture"
